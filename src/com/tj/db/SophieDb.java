@@ -16,6 +16,7 @@ public class SophieDb {
 
 	private String protocal = "jdbc:mysql://";
 	private String hostNamePort = "192.168.12.15:5209/";
+//	private String hostNamePort = "localhost:5219/";
 	private String scheme = "sword_production?";
 	private String user = "user=guoliufang&";
 	private String passwd = "password=tiger2108";
