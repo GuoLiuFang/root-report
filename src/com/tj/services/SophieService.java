@@ -20,13 +20,15 @@ public class SophieService {
 		List<Sophie> sophies = new ArrayList<>();
 		SophieDb sophieDb = new SophieDb();
 		sophies = sophieDb.ExtractDatabase();
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		//对sophie的数据进行简单加工。
 		for(Sophie sophie : sophies){
 			//1.修改record_time的格式
-			String record_time = sophie.getRecord_time();
 			try {
-				Date record_date = new SimpleDateFormat("yyyy-MM-dd").parse(record_time);
-				sophie.setRecord_time(record_date.toString());
+				String recordTime = sophie.getRecord_time();
+				Date recordDate = simpleDateFormat.parse(recordTime);
+				recordTime = simpleDateFormat.format(recordDate);
+				sophie.setRecord_time(recordTime);
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -66,6 +68,7 @@ public class SophieService {
 	private String replacePath(String src){
 		String result = "";
 		result = src.replace("/home/hadoop/hadoop-job/sophie-job/WWW", "sophieDetails");
+		result =result + ".html";//新增数据要把这个东西去掉
 		return result;
 	}
 
