@@ -68,7 +68,7 @@ public class SophieService {
 	private String replacePath(String src){
 		String result = "";
 		result = src.replace("/home/hadoop/hadoop-job/sophie-job/WWW", "sophieDetails");
-		result =result + ".html";//新增数据要把这个东西去掉
+//		result =result + ".html";//新增数据要把这个东西去掉
 		return result;
 	}
 

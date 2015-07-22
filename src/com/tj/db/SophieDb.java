@@ -20,7 +20,7 @@ public class SophieDb {
 	private String scheme = "sword_production?";
 	private String user = "user=guoliufang&";
 	private String passwd = "password=tiger2108";
-	private String sql = "select * from sophie_monitor;";
+	private String sql = "select * from sophie_monitor order by record_time desc;";
 
 	public List<Sophie> ExtractDatabase() {
 		List<Sophie> dataList = new ArrayList<>();
