@@ -34,27 +34,27 @@ public class SophieService {
 				e.printStackTrace();
 			}
 			//2.如果为info，不为零处理成超链接模式。
-			if(!"0".equalsIgnoreCase(sophie.getVld_info())){
+			if(!"0".equalsIgnoreCase(sophie.getVld_info().trim())){
 				String vldInfo = "<a href=\"" + this.replacePath(sophie.getVld_info()) + "\">查看详情</a>";
 				sophie.setVld_info(vldInfo);
 			}
-			if(!"0".equalsIgnoreCase(sophie.getFlt_info())){
+			if(!"0".equalsIgnoreCase(sophie.getFlt_info().trim())){
 				String fltInfo = "<a href=\"" + this.replacePath(sophie.getFlt_info()) + "\">查看详情</a>";
 				sophie.setFlt_info(fltInfo);
 			}
-			if(!"0".equalsIgnoreCase(sophie.getErr_info())){
+			if(!"0".equalsIgnoreCase(sophie.getErr_info().trim())){
 				String errInfo = "<a href=\"" + this.replacePath(sophie.getErr_info()) + "\">查看详情</a>";
 				sophie.setErr_info(errInfo);
 			}
-			if(!"0".equalsIgnoreCase(sophie.getDb_log())){
+			if(!"0".equalsIgnoreCase(sophie.getDb_log().trim())){
 				String dbLog = "<a href=\"" + this.replacePath(sophie.getDb_log()) + "\">查看详情</a>";
 				sophie.setDb_log(dbLog);
 			}
-			if(!"0".equalsIgnoreCase(sophie.getDb_err())){
+			if(!"0".equalsIgnoreCase(sophie.getDb_err().trim())){
 				String dbErr = "<a href=\"" + this.replacePath(sophie.getDb_err()) + "\">查看详情</a>";
 				sophie.setDb_err(dbErr);
 			}
-			if(!"0".equalsIgnoreCase(sophie.getDb_bad())){
+			if(!"0".equalsIgnoreCase(sophie.getDb_bad().trim())){
 				String dbBad = "<a href=\"" + this.replacePath(sophie.getDb_bad()) + "\">查看详情</a>";
 				sophie.setDb_bad(dbBad);
 			}
@@ -71,5 +71,13 @@ public class SophieService {
 //		result =result + ".html";//新增数据要把这个东西去掉
 		return result;
 	}
+	
+	public static void main(String[] args) {
+		SophieService service = new SophieService();
+		service.getResultList();
+		
+	}
+	
+	
 
 }
