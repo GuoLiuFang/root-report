@@ -1,6 +1,46 @@
 package com.tj.beans;
 
 public class Address {
+	
+	private String record_time;
+	private int total;
+	private int multiple;
+	private int multiple_in_black;
+	private int multiple_in_white;
+	private int multiple_in_other;
+	private int uniq;
+	private int uniq_in_black;
+	private int uniq_in_white;
+	private int uniq_lt_threshold_lt_rate;
+	private int uniq_lt_threshold_gt_rate;
+	private int uniq_gt_threshold_lt_rate;
+	private int new_num;
+	private int del_num;
+	private int black;
+	private int white;
+	//-------数据校验字段----------
+	private boolean multiply_ok;
+	private boolean unique_ok;
+	public boolean isUnique_ok() {
+		return unique_ok;
+	}
+	public void setUnique_ok(boolean unique_ok) {
+		this.unique_ok = unique_ok;
+	}
+	private boolean total_ok;
+	public boolean isTotal_ok() {
+		return total_ok;
+	}
+	public void setTotal_ok(boolean total_ok) {
+		this.total_ok = total_ok;
+	}
+	public boolean isMultiply_ok() {
+		return multiply_ok;
+	}
+	public void setMultiply_ok(boolean multiply_ok) {
+		this.multiply_ok = multiply_ok;
+	}
+	//-----------------
 	public String getRecord_time() {
 		return record_time;
 	}
@@ -97,21 +137,5 @@ public class Address {
 	public void setWhite(int white) {
 		this.white = white;
 	}
-	private String record_time;
-	private int total;
-	private int multiple;
-	private int multiple_in_black;
-	private int multiple_in_white;
-	private int multiple_in_other;
-	private int uniq;
-	private int uniq_in_black;
-	private int uniq_in_white;
-	private int uniq_lt_threshold_lt_rate;
-	private int uniq_lt_threshold_gt_rate;
-	private int uniq_gt_threshold_lt_rate;
-	private int new_num;
-	private int del_num;
-	private int black;
-	private int white;
 
 }

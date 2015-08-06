@@ -10,7 +10,7 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 	<table border="1">
-	<tr><td colspan="16" align="center">RootAddress 工作过程详情</td></tr>
+	<tr><td colspan="19" align="center">RootAddress 工作过程详情</td></tr>
 		<tr>
 			<th>日期</th>
 			<th>地址不为null的总数</th>
@@ -28,6 +28,9 @@ pageEncoding="UTF-8"%>
 			<th>新入黑名单数</th>
 			<th>当前黑名单的数量</th>
 			<th>当前白名单的数量</th>
+			<th>地址唯一的数量校验</th>
+			<th>地址不唯一的数量校验</th>
+			<th>总的数量校验</th>
 		</tr>
 		<%
 		List<Address> addressList = (List)session.getAttribute("addressDetails");
@@ -52,6 +55,9 @@ pageEncoding="UTF-8"%>
 			<td><%=address.getDel_num()%></td>
 			<td><%=address.getBlack()%></td>
 			<td><%=address.getWhite()%></td>
+			<td><%=address.isUnique_ok()%></td>
+			<td><%=address.isMultiply_ok()%></td>
+			<td><%=address.isTotal_ok()%></td>
 		</tr>
 
 

@@ -13,8 +13,5 @@
 <form action="ShowAddress" method="post">
 	<input type="submit" value="查看root_address入库过程" />
 </form>
-<form action="ShowLinuxV" method="post">
-	<input type="submit" value="查看linuxV的日率变化" />
-</form>
 </body>
 </html>
