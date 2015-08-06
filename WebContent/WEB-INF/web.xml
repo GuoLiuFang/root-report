@@ -19,4 +19,14 @@
     <servlet-name>ShowSophie</servlet-name>
     <url-pattern>/ShowSophie</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowAddress</display-name>
+    <servlet-name>ShowAddress</servlet-name>
+    <servlet-class>com.tj.servlets.ShowAddress</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowAddress</servlet-name>
+    <url-pattern>/ShowAddress</url-pattern>
+  </servlet-mapping>
 </web-app>
