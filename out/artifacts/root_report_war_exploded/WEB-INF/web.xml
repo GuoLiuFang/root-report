@@ -21,12 +21,12 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>ShowAddress</display-name>
-    <servlet-name>ShowAddress</servlet-name>
-    <servlet-class>com.tj.servlets.ShowAddress</servlet-class>
+    <display-name>ShowProcedure</display-name>
+    <servlet-name>ShowProcedure</servlet-name>
+    <servlet-class>com.tj.servlets.ShowProcedure</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ShowAddress</servlet-name>
-    <url-pattern>/ShowAddress</url-pattern>
+    <servlet-name>ShowProcedure</servlet-name>
+    <url-pattern>/ShowProcedure</url-pattern>
   </servlet-mapping>
 </web-app>

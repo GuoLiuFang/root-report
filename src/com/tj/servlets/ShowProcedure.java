@@ -8,19 +8,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.tj.beans.Address;
-import com.tj.services.AddressService;
+import com.tj.beans.Procedure;
+import com.tj.services.ProcedureService;
 
 /**
- * Servlet implementation class ShowAddress
+ * Servlet implementation class ShowProcedure
  */
-public class ShowAddress extends HttpServlet {
+public class ShowProcedure extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ShowAddress() {
+    public ShowProcedure() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,12 +36,12 @@ public class ShowAddress extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		AddressService addressService = new AddressService();
-		List<Address> addressDetails = addressService.getResultList();
+		ProcedureService procedureService = new ProcedureService();
+		List<Procedure> procedureDetails = procedureService.getResultList();
 		//----------- 核心的地方把处理结果返回前台               ------------------//
-		request.getSession().setAttribute("addressDetails", addressDetails);
+		request.getSession().setAttribute("procedureDetails", procedureDetails);
 		//                         --------------------//
-		response.sendRedirect("addressJobDetail.jsp");
+		response.sendRedirect("procedureJobDetail.jsp");
 	}
 
 }

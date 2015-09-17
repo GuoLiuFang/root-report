@@ -10,7 +10,7 @@
 <form action="ShowSophie" method="post">
 	<input type="submit" value="查看日志清洗过程" />
 </form>
-<form action="ShowAddress" method="post">
+<form action="ShowProcedure" method="post">
 	<input type="submit" value="查看root_address入库过程" />
 </form>
 </body>
