@@ -3,117 +3,94 @@ package com.tj.beans;
 public class Procedure {
     private String recordTime;
 
-    private int totalAllDid;
-    private int totalAllLin;
-    private int totalSuccessDid;
-    private int totalSuccessLin;
-    private int totalFailureDid;
-    private int totalFailureLin;
-    private int successHundredSeriesDid;
-    private int successHundredSeriesLin;
-    private int successOtherCategoryDid;
-    private int successOtherCategoryLin;
-    private int hundredSeriesShellCodeZeroDid;
-    private int hundredSeriesShellCodeZeroLin;
-    private int hundredSeriesShellCodeNoZeroDid;
-    private int hundredSeriesShellCodeNoZeroLin;
-    private int shellCodeZeroTwoMeaningsDid;
-    private int shellCodeZeroTwoMeaningsLin;
-    private int shellCodeZeroUniqueAddressDid;
-    private int shellCodeZeroUniqueAddressLin;
-    private int shellCodeZeroAddressEmptyDid;
-    private int shellCodeZeroAddressEmptyLin;
-    private int uniqueAddressInBlackDid;
-    private int uniqueAddressInBlackLin;
-    private int uniqueAddressInWhiteDid;
-    private int uniqueAddressInWhiteLin;
-    private int uniqueAddressLessLessDid;
-    private int uniqueAddressLessLessLin;
-    private int uniqueAddressLessMoreDid;
-    private int uniqueAddressLessMoreLin;
-    private int uniqueAddressMoreLessDid;
-    private int uniqueAddressMoreLessLin;
-    private int uniqueAddressNewIncrementDid;
-    private int uniqueAddressNewIncrementLin;
-    private int uniAddLesMorDirectedDid;
-    private int uniAddLesMorDirectedLin;
-    private int uniAddLesMorUndirectedDid;
-    private int uniAddLesMorUndirectedLin;
-    private int uniAddLesMorDirLessLessDid;
-    private int uniAddLesMorDirLessLessLin;
-    private int uniAddLesMorDirLessMoreDid;
-    private int uniAddLesMorDirLessMoreLin;
-    private int uniAddLesMorDirMoreLessDid;
-    private int uniAddLesMorDirMoreLessLin;
-    private int uniAddLesMorDirNewIncrementDid;
-    private int uniAddLesMorDirNewIncrementLin;
-    private int uniAddMorLesDirectedDid;
-    private int uniAddMorLesDirectedLin;
-    private int uniAddMorLesUndirectedDid;
-    private int uniAddMorLesUndirectedLin;
-    private int uniAddMorLesDirLessLessDid;
-    private int uniAddMorLesDirLessLessLin;
-    private int uniAddMorLesDirLessMoreDid;
-    private int uniAddMorLesDirLessMoreLin;
-    private int uniAddMorLesDirMoreLessDid;
-    private int uniAddMorLesDirMoreLessLin;
-    private int uniAddMorLesDirNewIncrementDid;
-    private int uniAddMorLesDirNewIncrementLin;
-    private int addEmpDirectedDid;
-    private int addEmpDirectedLin;
-    private int addEmpUndirectedDid;
-    private int addEmpUndirectedLin;
-    private int addEmpDirLessLessDid;
-    private int addEmpDirLessLessLin;
-    private int addEmpDirLessMoreDid;
-    private int addEmpDirLessMoreLin;
-    private int addEmpDirMoreLessDid;
-    private int addEmpDirMoreLessLin;
-    private int addEmpDirInBlackDid;
-    private int addEmpDirInBlackLin;
-    private int addEmpDirInWhiteDid;
-    private int addEmpDirInWhiteLin;
-    private int addEmpDirNewIncrementDid;
-    private int addEmpDirNewIncrementLin;
-    private int totalSuccessInLogExe;
-    private int totalSuccessInLogIng;
-    private int totalSuccessInLogLin;
-    private int totalSuccessInDataBaseExe;
-    private int totalSuccessInDataBaseIng;
+    private String totalAllDid;
+    private String totalAllLin;
+    private String totalSuccessDid;
+    private String totalSuccessLin;
+    private String totalFailureDid;
+    private String totalFailureLin;
+    private String successHundredSeriesDid;
+    private String successHundredSeriesLin;
+    private String successOtherCategoryDid;
+    private String successOtherCategoryLin;
+    private String hundredSeriesShellCodeZeroDid;
+    private String hundredSeriesShellCodeZeroLin;
+    private String hundredSeriesShellCodeNoZeroDid;
+    private String hundredSeriesShellCodeNoZeroLin;
+    private String shellCodeZeroTwoMeaningsDid;
+    private String shellCodeZeroTwoMeaningsLin;
+    private String shellCodeZeroUniqueAddressDid;
+    private String shellCodeZeroUniqueAddressLin;
+    private String shellCodeZeroAddressEmptyDid;
+    private String shellCodeZeroAddressEmptyLin;
+    private String uniqueAddressInBlackDid;
+    private String uniqueAddressInBlackLin;
+    private String uniqueAddressInWhiteDid;
+    private String uniqueAddressInWhiteLin;
+    private String uniqueAddressLessLessDid;
+    private String uniqueAddressLessLessLin;
+    private String uniqueAddressLessMoreDid;
+    private String uniqueAddressLessMoreLin;
+    private String uniqueAddressMoreLessDid;
+    private String uniqueAddressMoreLessLin;
+    private String uniqueAddressNewIncrementDid;
+    private String uniqueAddressNewIncrementLin;
+    private String uniAddLesMorDirectedDid;
+    private String uniAddLesMorDirectedLin;
+    private String uniAddLesMorUndirectedDid;
+    private String uniAddLesMorUndirectedLin;
+    private String uniAddLesMorDirLessLessDid;
+    private String uniAddLesMorDirLessLessLin;
+    private String uniAddLesMorDirLessMoreDid;
+    private String uniAddLesMorDirLessMoreLin;
+    private String uniAddLesMorDirMoreLessDid;
+    private String uniAddLesMorDirMoreLessLin;
+    private String uniAddLesMorDirNewIncrementDid;
+    private String uniAddLesMorDirNewIncrementLin;
+    private String uniAddMorLesDirectedDid;
+    private String uniAddMorLesDirectedLin;
+    private String uniAddMorLesUndirectedDid;
+    private String uniAddMorLesUndirectedLin;
+    private String uniAddMorLesDirLessLessDid;
+    private String uniAddMorLesDirLessLessLin;
+    private String uniAddMorLesDirLessMoreDid;
+    private String uniAddMorLesDirLessMoreLin;
+    private String uniAddMorLesDirMoreLessDid;
+    private String uniAddMorLesDirMoreLessLin;
+    private String uniAddMorLesDirNewIncrementDid;
+    private String uniAddMorLesDirNewIncrementLin;
+    private String addEmpDirectedDid;
+    private String addEmpDirectedLin;
+    private String addEmpUndirectedDid;
+    private String addEmpUndirectedLin;
+    private String addEmpDirLessLessDid;
+    private String addEmpDirLessLessLin;
+    private String addEmpDirLessMoreDid;
+    private String addEmpDirLessMoreLin;
+    private String addEmpDirMoreLessDid;
+    private String addEmpDirMoreLessLin;
+    private String addEmpDirInBlackDid;
+    private String addEmpDirInBlackLin;
+    private String addEmpDirInWhiteDid;
+    private String addEmpDirInWhiteLin;
+    private String addEmpDirNewIncrementDid;
+    private String addEmpDirNewIncrementLin;
 
-    public int getTotalSuccessInLogExe() {
-        return totalSuccessInLogExe;
-    }
+    private String totalSuccessInLogExe;
+    private String totalSuccessInLogIng;
+    private String totalSuccessInLogLin;
+    private String totalSuccessInDataBaseExe;
+    private String totalSuccessInDataBaseIng;
+    private String totalSuccessInDataBaseLin;
 
-    public void setTotalSuccessInLogExe(int totalSuccessInLogExe) {
-        this.totalSuccessInLogExe = totalSuccessInLogExe;
-    }
-
-    public int getTotalSuccessInLogIng() {
-        return totalSuccessInLogIng;
-    }
-
-    public void setTotalSuccessInLogIng(int totalSuccessInLogIng) {
-        this.totalSuccessInLogIng = totalSuccessInLogIng;
-    }
-
-    public int getTotalSuccessInDataBaseExe() {
-        return totalSuccessInDataBaseExe;
-    }
-
-    public void setTotalSuccessInDataBaseExe(int totalSuccessInDataBaseExe) {
-        this.totalSuccessInDataBaseExe = totalSuccessInDataBaseExe;
-    }
-
-    public int getTotalSuccessInDataBaseIng() {
-        return totalSuccessInDataBaseIng;
-    }
-
-    public void setTotalSuccessInDataBaseIng(int totalSuccessInDataBaseIng) {
-        this.totalSuccessInDataBaseIng = totalSuccessInDataBaseIng;
-    }
-
-    private int totalSuccessInDataBaseLin;
+    private String outAddMorMorDid;
+    private String outAddMorMorLin;
+    private String outAddLessDid;
+    private String outAddLessLin;
+    private String outAddMorLesZeroDid;
+    private String outAddMorLesZeroLin;
+    private String outAddMorLesHalfDid;
+    private String outAddMorLesHalfLin;
 
     public String getRecordTime() {
         return recordTime;
@@ -123,597 +100,691 @@ public class Procedure {
         this.recordTime = recordTime;
     }
 
-    public int getTotalAllDid() {
+    public String getTotalAllDid() {
         return totalAllDid;
     }
 
-    public void setTotalAllDid(int totalAllDid) {
+    public void setTotalAllDid(String totalAllDid) {
         this.totalAllDid = totalAllDid;
     }
 
-    public int getTotalAllLin() {
+    public String getTotalAllLin() {
         return totalAllLin;
     }
 
-    public void setTotalAllLin(int totalAllLin) {
+    public void setTotalAllLin(String totalAllLin) {
         this.totalAllLin = totalAllLin;
     }
 
-    public int getTotalSuccessDid() {
+    public String getTotalSuccessDid() {
         return totalSuccessDid;
     }
 
-    public void setTotalSuccessDid(int totalSuccessDid) {
+    public void setTotalSuccessDid(String totalSuccessDid) {
         this.totalSuccessDid = totalSuccessDid;
     }
 
-    public int getTotalSuccessLin() {
+    public String getTotalSuccessLin() {
         return totalSuccessLin;
     }
 
-    public void setTotalSuccessLin(int totalSuccessLin) {
+    public void setTotalSuccessLin(String totalSuccessLin) {
         this.totalSuccessLin = totalSuccessLin;
     }
 
-    public int getTotalFailureDid() {
+    public String getTotalFailureDid() {
         return totalFailureDid;
     }
 
-    public void setTotalFailureDid(int totalFailureDid) {
+    public void setTotalFailureDid(String totalFailureDid) {
         this.totalFailureDid = totalFailureDid;
     }
 
-    public int getTotalFailureLin() {
+    public String getTotalFailureLin() {
         return totalFailureLin;
     }
 
-    public void setTotalFailureLin(int totalFailureLin) {
+    public void setTotalFailureLin(String totalFailureLin) {
         this.totalFailureLin = totalFailureLin;
     }
 
-    public int getSuccessHundredSeriesDid() {
+    public String getSuccessHundredSeriesDid() {
         return successHundredSeriesDid;
     }
 
-    public void setSuccessHundredSeriesDid(int successHundredSeriesDid) {
+    public void setSuccessHundredSeriesDid(String successHundredSeriesDid) {
         this.successHundredSeriesDid = successHundredSeriesDid;
     }
 
-    public int getSuccessHundredSeriesLin() {
+    public String getSuccessHundredSeriesLin() {
         return successHundredSeriesLin;
     }
 
-    public void setSuccessHundredSeriesLin(int successHundredSeriesLin) {
+    public void setSuccessHundredSeriesLin(String successHundredSeriesLin) {
         this.successHundredSeriesLin = successHundredSeriesLin;
     }
 
-    public int getSuccessOtherCategoryDid() {
+    public String getSuccessOtherCategoryDid() {
         return successOtherCategoryDid;
     }
 
-    public void setSuccessOtherCategoryDid(int successOtherCategoryDid) {
+    public void setSuccessOtherCategoryDid(String successOtherCategoryDid) {
         this.successOtherCategoryDid = successOtherCategoryDid;
     }
 
-    public int getSuccessOtherCategoryLin() {
+    public String getSuccessOtherCategoryLin() {
         return successOtherCategoryLin;
     }
 
-    public void setSuccessOtherCategoryLin(int successOtherCategoryLin) {
+    public void setSuccessOtherCategoryLin(String successOtherCategoryLin) {
         this.successOtherCategoryLin = successOtherCategoryLin;
     }
 
-    public int getHundredSeriesShellCodeZeroDid() {
+    public String getHundredSeriesShellCodeZeroDid() {
         return hundredSeriesShellCodeZeroDid;
     }
 
-    public void setHundredSeriesShellCodeZeroDid(int hundredSeriesShellCodeZeroDid) {
+    public void setHundredSeriesShellCodeZeroDid(String hundredSeriesShellCodeZeroDid) {
         this.hundredSeriesShellCodeZeroDid = hundredSeriesShellCodeZeroDid;
     }
 
-    public int getHundredSeriesShellCodeZeroLin() {
+    public String getHundredSeriesShellCodeZeroLin() {
         return hundredSeriesShellCodeZeroLin;
     }
 
-    public void setHundredSeriesShellCodeZeroLin(int hundredSeriesShellCodeZeroLin) {
+    public void setHundredSeriesShellCodeZeroLin(String hundredSeriesShellCodeZeroLin) {
         this.hundredSeriesShellCodeZeroLin = hundredSeriesShellCodeZeroLin;
     }
 
-    public int getHundredSeriesShellCodeNoZeroDid() {
+    public String getHundredSeriesShellCodeNoZeroDid() {
         return hundredSeriesShellCodeNoZeroDid;
     }
 
-    public void setHundredSeriesShellCodeNoZeroDid(int hundredSeriesShellCodeNoZeroDid) {
+    public void setHundredSeriesShellCodeNoZeroDid(String hundredSeriesShellCodeNoZeroDid) {
         this.hundredSeriesShellCodeNoZeroDid = hundredSeriesShellCodeNoZeroDid;
     }
 
-    public int getHundredSeriesShellCodeNoZeroLin() {
+    public String getHundredSeriesShellCodeNoZeroLin() {
         return hundredSeriesShellCodeNoZeroLin;
     }
 
-    public void setHundredSeriesShellCodeNoZeroLin(int hundredSeriesShellCodeNoZeroLin) {
+    public void setHundredSeriesShellCodeNoZeroLin(String hundredSeriesShellCodeNoZeroLin) {
         this.hundredSeriesShellCodeNoZeroLin = hundredSeriesShellCodeNoZeroLin;
     }
 
-    public int getShellCodeZeroTwoMeaningsDid() {
+    public String getShellCodeZeroTwoMeaningsDid() {
         return shellCodeZeroTwoMeaningsDid;
     }
 
-    public void setShellCodeZeroTwoMeaningsDid(int shellCodeZeroTwoMeaningsDid) {
+    public void setShellCodeZeroTwoMeaningsDid(String shellCodeZeroTwoMeaningsDid) {
         this.shellCodeZeroTwoMeaningsDid = shellCodeZeroTwoMeaningsDid;
     }
 
-    public int getShellCodeZeroTwoMeaningsLin() {
+    public String getShellCodeZeroTwoMeaningsLin() {
         return shellCodeZeroTwoMeaningsLin;
     }
 
-    public void setShellCodeZeroTwoMeaningsLin(int shellCodeZeroTwoMeaningsLin) {
+    public void setShellCodeZeroTwoMeaningsLin(String shellCodeZeroTwoMeaningsLin) {
         this.shellCodeZeroTwoMeaningsLin = shellCodeZeroTwoMeaningsLin;
     }
 
-    public int getShellCodeZeroUniqueAddressDid() {
+    public String getShellCodeZeroUniqueAddressDid() {
         return shellCodeZeroUniqueAddressDid;
     }
 
-    public void setShellCodeZeroUniqueAddressDid(int shellCodeZeroUniqueAddressDid) {
+    public void setShellCodeZeroUniqueAddressDid(String shellCodeZeroUniqueAddressDid) {
         this.shellCodeZeroUniqueAddressDid = shellCodeZeroUniqueAddressDid;
     }
 
-    public int getShellCodeZeroUniqueAddressLin() {
+    public String getShellCodeZeroUniqueAddressLin() {
         return shellCodeZeroUniqueAddressLin;
     }
 
-    public void setShellCodeZeroUniqueAddressLin(int shellCodeZeroUniqueAddressLin) {
+    public void setShellCodeZeroUniqueAddressLin(String shellCodeZeroUniqueAddressLin) {
         this.shellCodeZeroUniqueAddressLin = shellCodeZeroUniqueAddressLin;
     }
 
-    public int getShellCodeZeroAddressEmptyDid() {
+    public String getShellCodeZeroAddressEmptyDid() {
         return shellCodeZeroAddressEmptyDid;
     }
 
-    public void setShellCodeZeroAddressEmptyDid(int shellCodeZeroAddressEmptyDid) {
+    public void setShellCodeZeroAddressEmptyDid(String shellCodeZeroAddressEmptyDid) {
         this.shellCodeZeroAddressEmptyDid = shellCodeZeroAddressEmptyDid;
     }
 
-    public int getShellCodeZeroAddressEmptyLin() {
+    public String getShellCodeZeroAddressEmptyLin() {
         return shellCodeZeroAddressEmptyLin;
     }
 
-    public void setShellCodeZeroAddressEmptyLin(int shellCodeZeroAddressEmptyLin) {
+    public void setShellCodeZeroAddressEmptyLin(String shellCodeZeroAddressEmptyLin) {
         this.shellCodeZeroAddressEmptyLin = shellCodeZeroAddressEmptyLin;
     }
 
-    public int getUniqueAddressInBlackDid() {
+    public String getUniqueAddressInBlackDid() {
         return uniqueAddressInBlackDid;
     }
 
-    public void setUniqueAddressInBlackDid(int uniqueAddressInBlackDid) {
+    public void setUniqueAddressInBlackDid(String uniqueAddressInBlackDid) {
         this.uniqueAddressInBlackDid = uniqueAddressInBlackDid;
     }
 
-    public int getUniqueAddressInBlackLin() {
+    public String getUniqueAddressInBlackLin() {
         return uniqueAddressInBlackLin;
     }
 
-    public void setUniqueAddressInBlackLin(int uniqueAddressInBlackLin) {
+    public void setUniqueAddressInBlackLin(String uniqueAddressInBlackLin) {
         this.uniqueAddressInBlackLin = uniqueAddressInBlackLin;
     }
 
-    public int getUniqueAddressInWhiteDid() {
+    public String getUniqueAddressInWhiteDid() {
         return uniqueAddressInWhiteDid;
     }
 
-    public void setUniqueAddressInWhiteDid(int uniqueAddressInWhiteDid) {
+    public void setUniqueAddressInWhiteDid(String uniqueAddressInWhiteDid) {
         this.uniqueAddressInWhiteDid = uniqueAddressInWhiteDid;
     }
 
-    public int getUniqueAddressInWhiteLin() {
+    public String getUniqueAddressInWhiteLin() {
         return uniqueAddressInWhiteLin;
     }
 
-    public void setUniqueAddressInWhiteLin(int uniqueAddressInWhiteLin) {
+    public void setUniqueAddressInWhiteLin(String uniqueAddressInWhiteLin) {
         this.uniqueAddressInWhiteLin = uniqueAddressInWhiteLin;
     }
 
-    public int getUniqueAddressLessLessDid() {
+    public String getUniqueAddressLessLessDid() {
         return uniqueAddressLessLessDid;
     }
 
-    public void setUniqueAddressLessLessDid(int uniqueAddressLessLessDid) {
+    public void setUniqueAddressLessLessDid(String uniqueAddressLessLessDid) {
         this.uniqueAddressLessLessDid = uniqueAddressLessLessDid;
     }
 
-    public int getUniqueAddressLessLessLin() {
+    public String getUniqueAddressLessLessLin() {
         return uniqueAddressLessLessLin;
     }
 
-    public void setUniqueAddressLessLessLin(int uniqueAddressLessLessLin) {
+    public void setUniqueAddressLessLessLin(String uniqueAddressLessLessLin) {
         this.uniqueAddressLessLessLin = uniqueAddressLessLessLin;
     }
 
-    public int getUniqueAddressLessMoreDid() {
+    public String getUniqueAddressLessMoreDid() {
         return uniqueAddressLessMoreDid;
     }
 
-    public void setUniqueAddressLessMoreDid(int uniqueAddressLessMoreDid) {
+    public void setUniqueAddressLessMoreDid(String uniqueAddressLessMoreDid) {
         this.uniqueAddressLessMoreDid = uniqueAddressLessMoreDid;
     }
 
-    public int getUniqueAddressLessMoreLin() {
+    public String getUniqueAddressLessMoreLin() {
         return uniqueAddressLessMoreLin;
     }
 
-    public void setUniqueAddressLessMoreLin(int uniqueAddressLessMoreLin) {
+    public void setUniqueAddressLessMoreLin(String uniqueAddressLessMoreLin) {
         this.uniqueAddressLessMoreLin = uniqueAddressLessMoreLin;
     }
 
-    public int getUniqueAddressMoreLessDid() {
+    public String getUniqueAddressMoreLessDid() {
         return uniqueAddressMoreLessDid;
     }
 
-    public void setUniqueAddressMoreLessDid(int uniqueAddressMoreLessDid) {
+    public void setUniqueAddressMoreLessDid(String uniqueAddressMoreLessDid) {
         this.uniqueAddressMoreLessDid = uniqueAddressMoreLessDid;
     }
 
-    public int getUniqueAddressMoreLessLin() {
+    public String getUniqueAddressMoreLessLin() {
         return uniqueAddressMoreLessLin;
     }
 
-    public void setUniqueAddressMoreLessLin(int uniqueAddressMoreLessLin) {
+    public void setUniqueAddressMoreLessLin(String uniqueAddressMoreLessLin) {
         this.uniqueAddressMoreLessLin = uniqueAddressMoreLessLin;
     }
 
-    public int getUniqueAddressNewIncrementDid() {
+    public String getUniqueAddressNewIncrementDid() {
         return uniqueAddressNewIncrementDid;
     }
 
-    public void setUniqueAddressNewIncrementDid(int uniqueAddressNewIncrementDid) {
+    public void setUniqueAddressNewIncrementDid(String uniqueAddressNewIncrementDid) {
         this.uniqueAddressNewIncrementDid = uniqueAddressNewIncrementDid;
     }
 
-    public int getUniqueAddressNewIncrementLin() {
+    public String getUniqueAddressNewIncrementLin() {
         return uniqueAddressNewIncrementLin;
     }
 
-    public void setUniqueAddressNewIncrementLin(int uniqueAddressNewIncrementLin) {
+    public void setUniqueAddressNewIncrementLin(String uniqueAddressNewIncrementLin) {
         this.uniqueAddressNewIncrementLin = uniqueAddressNewIncrementLin;
     }
 
-    public int getUniAddLesMorDirectedDid() {
+    public String getUniAddLesMorDirectedDid() {
         return uniAddLesMorDirectedDid;
     }
 
-    public void setUniAddLesMorDirectedDid(int uniAddLesMorDirectedDid) {
+    public void setUniAddLesMorDirectedDid(String uniAddLesMorDirectedDid) {
         this.uniAddLesMorDirectedDid = uniAddLesMorDirectedDid;
     }
 
-    public int getUniAddLesMorDirectedLin() {
+    public String getUniAddLesMorDirectedLin() {
         return uniAddLesMorDirectedLin;
     }
 
-    public void setUniAddLesMorDirectedLin(int uniAddLesMorDirectedLin) {
+    public void setUniAddLesMorDirectedLin(String uniAddLesMorDirectedLin) {
         this.uniAddLesMorDirectedLin = uniAddLesMorDirectedLin;
     }
 
-    public int getUniAddLesMorUndirectedDid() {
+    public String getUniAddLesMorUndirectedDid() {
         return uniAddLesMorUndirectedDid;
     }
 
-    public void setUniAddLesMorUndirectedDid(int uniAddLesMorUndirectedDid) {
+    public void setUniAddLesMorUndirectedDid(String uniAddLesMorUndirectedDid) {
         this.uniAddLesMorUndirectedDid = uniAddLesMorUndirectedDid;
     }
 
-    public int getUniAddLesMorUndirectedLin() {
+    public String getUniAddLesMorUndirectedLin() {
         return uniAddLesMorUndirectedLin;
     }
 
-    public void setUniAddLesMorUndirectedLin(int uniAddLesMorUndirectedLin) {
+    public void setUniAddLesMorUndirectedLin(String uniAddLesMorUndirectedLin) {
         this.uniAddLesMorUndirectedLin = uniAddLesMorUndirectedLin;
     }
 
-    public int getUniAddLesMorDirLessLessDid() {
+    public String getUniAddLesMorDirLessLessDid() {
         return uniAddLesMorDirLessLessDid;
     }
 
-    public void setUniAddLesMorDirLessLessDid(int uniAddLesMorDirLessLessDid) {
+    public void setUniAddLesMorDirLessLessDid(String uniAddLesMorDirLessLessDid) {
         this.uniAddLesMorDirLessLessDid = uniAddLesMorDirLessLessDid;
     }
 
-    public int getUniAddLesMorDirLessLessLin() {
+    public String getUniAddLesMorDirLessLessLin() {
         return uniAddLesMorDirLessLessLin;
     }
 
-    public void setUniAddLesMorDirLessLessLin(int uniAddLesMorDirLessLessLin) {
+    public void setUniAddLesMorDirLessLessLin(String uniAddLesMorDirLessLessLin) {
         this.uniAddLesMorDirLessLessLin = uniAddLesMorDirLessLessLin;
     }
 
-    public int getUniAddLesMorDirLessMoreDid() {
+    public String getUniAddLesMorDirLessMoreDid() {
         return uniAddLesMorDirLessMoreDid;
     }
 
-    public void setUniAddLesMorDirLessMoreDid(int uniAddLesMorDirLessMoreDid) {
+    public void setUniAddLesMorDirLessMoreDid(String uniAddLesMorDirLessMoreDid) {
         this.uniAddLesMorDirLessMoreDid = uniAddLesMorDirLessMoreDid;
     }
 
-    public int getUniAddLesMorDirLessMoreLin() {
+    public String getUniAddLesMorDirLessMoreLin() {
         return uniAddLesMorDirLessMoreLin;
     }
 
-    public void setUniAddLesMorDirLessMoreLin(int uniAddLesMorDirLessMoreLin) {
+    public void setUniAddLesMorDirLessMoreLin(String uniAddLesMorDirLessMoreLin) {
         this.uniAddLesMorDirLessMoreLin = uniAddLesMorDirLessMoreLin;
     }
 
-    public int getUniAddLesMorDirMoreLessDid() {
+    public String getUniAddLesMorDirMoreLessDid() {
         return uniAddLesMorDirMoreLessDid;
     }
 
-    public void setUniAddLesMorDirMoreLessDid(int uniAddLesMorDirMoreLessDid) {
+    public void setUniAddLesMorDirMoreLessDid(String uniAddLesMorDirMoreLessDid) {
         this.uniAddLesMorDirMoreLessDid = uniAddLesMorDirMoreLessDid;
     }
 
-    public int getUniAddLesMorDirMoreLessLin() {
+    public String getUniAddLesMorDirMoreLessLin() {
         return uniAddLesMorDirMoreLessLin;
     }
 
-    public void setUniAddLesMorDirMoreLessLin(int uniAddLesMorDirMoreLessLin) {
+    public void setUniAddLesMorDirMoreLessLin(String uniAddLesMorDirMoreLessLin) {
         this.uniAddLesMorDirMoreLessLin = uniAddLesMorDirMoreLessLin;
     }
 
-    public int getUniAddLesMorDirNewIncrementDid() {
+    public String getUniAddLesMorDirNewIncrementDid() {
         return uniAddLesMorDirNewIncrementDid;
     }
 
-    public void setUniAddLesMorDirNewIncrementDid(int uniAddLesMorDirNewIncrementDid) {
+    public void setUniAddLesMorDirNewIncrementDid(String uniAddLesMorDirNewIncrementDid) {
         this.uniAddLesMorDirNewIncrementDid = uniAddLesMorDirNewIncrementDid;
     }
 
-    public int getUniAddLesMorDirNewIncrementLin() {
+    public String getUniAddLesMorDirNewIncrementLin() {
         return uniAddLesMorDirNewIncrementLin;
     }
 
-    public void setUniAddLesMorDirNewIncrementLin(int uniAddLesMorDirNewIncrementLin) {
+    public void setUniAddLesMorDirNewIncrementLin(String uniAddLesMorDirNewIncrementLin) {
         this.uniAddLesMorDirNewIncrementLin = uniAddLesMorDirNewIncrementLin;
     }
 
-    public int getUniAddMorLesDirectedDid() {
+    public String getUniAddMorLesDirectedDid() {
         return uniAddMorLesDirectedDid;
     }
 
-    public void setUniAddMorLesDirectedDid(int uniAddMorLesDirectedDid) {
+    public void setUniAddMorLesDirectedDid(String uniAddMorLesDirectedDid) {
         this.uniAddMorLesDirectedDid = uniAddMorLesDirectedDid;
     }
 
-    public int getUniAddMorLesDirectedLin() {
+    public String getUniAddMorLesDirectedLin() {
         return uniAddMorLesDirectedLin;
     }
 
-    public void setUniAddMorLesDirectedLin(int uniAddMorLesDirectedLin) {
+    public void setUniAddMorLesDirectedLin(String uniAddMorLesDirectedLin) {
         this.uniAddMorLesDirectedLin = uniAddMorLesDirectedLin;
     }
 
-    public int getUniAddMorLesUndirectedDid() {
+    public String getUniAddMorLesUndirectedDid() {
         return uniAddMorLesUndirectedDid;
     }
 
-    public void setUniAddMorLesUndirectedDid(int uniAddMorLesUndirectedDid) {
+    public void setUniAddMorLesUndirectedDid(String uniAddMorLesUndirectedDid) {
         this.uniAddMorLesUndirectedDid = uniAddMorLesUndirectedDid;
     }
 
-    public int getUniAddMorLesUndirectedLin() {
+    public String getUniAddMorLesUndirectedLin() {
         return uniAddMorLesUndirectedLin;
     }
 
-    public void setUniAddMorLesUndirectedLin(int uniAddMorLesUndirectedLin) {
+    public void setUniAddMorLesUndirectedLin(String uniAddMorLesUndirectedLin) {
         this.uniAddMorLesUndirectedLin = uniAddMorLesUndirectedLin;
     }
 
-    public int getUniAddMorLesDirLessLessDid() {
+    public String getUniAddMorLesDirLessLessDid() {
         return uniAddMorLesDirLessLessDid;
     }
 
-    public void setUniAddMorLesDirLessLessDid(int uniAddMorLesDirLessLessDid) {
+    public void setUniAddMorLesDirLessLessDid(String uniAddMorLesDirLessLessDid) {
         this.uniAddMorLesDirLessLessDid = uniAddMorLesDirLessLessDid;
     }
 
-    public int getUniAddMorLesDirLessLessLin() {
+    public String getUniAddMorLesDirLessLessLin() {
         return uniAddMorLesDirLessLessLin;
     }
 
-    public void setUniAddMorLesDirLessLessLin(int uniAddMorLesDirLessLessLin) {
+    public void setUniAddMorLesDirLessLessLin(String uniAddMorLesDirLessLessLin) {
         this.uniAddMorLesDirLessLessLin = uniAddMorLesDirLessLessLin;
     }
 
-    public int getUniAddMorLesDirLessMoreDid() {
+    public String getUniAddMorLesDirLessMoreDid() {
         return uniAddMorLesDirLessMoreDid;
     }
 
-    public void setUniAddMorLesDirLessMoreDid(int uniAddMorLesDirLessMoreDid) {
+    public void setUniAddMorLesDirLessMoreDid(String uniAddMorLesDirLessMoreDid) {
         this.uniAddMorLesDirLessMoreDid = uniAddMorLesDirLessMoreDid;
     }
 
-    public int getUniAddMorLesDirLessMoreLin() {
+    public String getUniAddMorLesDirLessMoreLin() {
         return uniAddMorLesDirLessMoreLin;
     }
 
-    public void setUniAddMorLesDirLessMoreLin(int uniAddMorLesDirLessMoreLin) {
+    public void setUniAddMorLesDirLessMoreLin(String uniAddMorLesDirLessMoreLin) {
         this.uniAddMorLesDirLessMoreLin = uniAddMorLesDirLessMoreLin;
     }
 
-    public int getUniAddMorLesDirMoreLessDid() {
+    public String getUniAddMorLesDirMoreLessDid() {
         return uniAddMorLesDirMoreLessDid;
     }
 
-    public void setUniAddMorLesDirMoreLessDid(int uniAddMorLesDirMoreLessDid) {
+    public void setUniAddMorLesDirMoreLessDid(String uniAddMorLesDirMoreLessDid) {
         this.uniAddMorLesDirMoreLessDid = uniAddMorLesDirMoreLessDid;
     }
 
-    public int getUniAddMorLesDirMoreLessLin() {
+    public String getUniAddMorLesDirMoreLessLin() {
         return uniAddMorLesDirMoreLessLin;
     }
 
-    public void setUniAddMorLesDirMoreLessLin(int uniAddMorLesDirMoreLessLin) {
+    public void setUniAddMorLesDirMoreLessLin(String uniAddMorLesDirMoreLessLin) {
         this.uniAddMorLesDirMoreLessLin = uniAddMorLesDirMoreLessLin;
     }
 
-    public int getUniAddMorLesDirNewIncrementDid() {
+    public String getUniAddMorLesDirNewIncrementDid() {
         return uniAddMorLesDirNewIncrementDid;
     }
 
-    public void setUniAddMorLesDirNewIncrementDid(int uniAddMorLesDirNewIncrementDid) {
+    public void setUniAddMorLesDirNewIncrementDid(String uniAddMorLesDirNewIncrementDid) {
         this.uniAddMorLesDirNewIncrementDid = uniAddMorLesDirNewIncrementDid;
     }
 
-    public int getUniAddMorLesDirNewIncrementLin() {
+    public String getUniAddMorLesDirNewIncrementLin() {
         return uniAddMorLesDirNewIncrementLin;
     }
 
-    public void setUniAddMorLesDirNewIncrementLin(int uniAddMorLesDirNewIncrementLin) {
+    public void setUniAddMorLesDirNewIncrementLin(String uniAddMorLesDirNewIncrementLin) {
         this.uniAddMorLesDirNewIncrementLin = uniAddMorLesDirNewIncrementLin;
     }
 
-    public int getAddEmpDirectedDid() {
+    public String getAddEmpDirectedDid() {
         return addEmpDirectedDid;
     }
 
-    public void setAddEmpDirectedDid(int addEmpDirectedDid) {
+    public void setAddEmpDirectedDid(String addEmpDirectedDid) {
         this.addEmpDirectedDid = addEmpDirectedDid;
     }
 
-    public int getAddEmpDirectedLin() {
+    public String getAddEmpDirectedLin() {
         return addEmpDirectedLin;
     }
 
-    public void setAddEmpDirectedLin(int addEmpDirectedLin) {
+    public void setAddEmpDirectedLin(String addEmpDirectedLin) {
         this.addEmpDirectedLin = addEmpDirectedLin;
     }
 
-    public int getAddEmpUndirectedDid() {
+    public String getAddEmpUndirectedDid() {
         return addEmpUndirectedDid;
     }
 
-    public void setAddEmpUndirectedDid(int addEmpUndirectedDid) {
+    public void setAddEmpUndirectedDid(String addEmpUndirectedDid) {
         this.addEmpUndirectedDid = addEmpUndirectedDid;
     }
 
-    public int getAddEmpUndirectedLin() {
+    public String getAddEmpUndirectedLin() {
         return addEmpUndirectedLin;
     }
 
-    public void setAddEmpUndirectedLin(int addEmpUndirectedLin) {
+    public void setAddEmpUndirectedLin(String addEmpUndirectedLin) {
         this.addEmpUndirectedLin = addEmpUndirectedLin;
     }
 
-    public int getAddEmpDirLessLessDid() {
+    public String getAddEmpDirLessLessDid() {
         return addEmpDirLessLessDid;
     }
 
-    public void setAddEmpDirLessLessDid(int addEmpDirLessLessDid) {
+    public void setAddEmpDirLessLessDid(String addEmpDirLessLessDid) {
         this.addEmpDirLessLessDid = addEmpDirLessLessDid;
     }
 
-    public int getAddEmpDirLessLessLin() {
+    public String getAddEmpDirLessLessLin() {
         return addEmpDirLessLessLin;
     }
 
-    public void setAddEmpDirLessLessLin(int addEmpDirLessLessLin) {
+    public void setAddEmpDirLessLessLin(String addEmpDirLessLessLin) {
         this.addEmpDirLessLessLin = addEmpDirLessLessLin;
     }
 
-    public int getAddEmpDirLessMoreDid() {
+    public String getAddEmpDirLessMoreDid() {
         return addEmpDirLessMoreDid;
     }
 
-    public void setAddEmpDirLessMoreDid(int addEmpDirLessMoreDid) {
+    public void setAddEmpDirLessMoreDid(String addEmpDirLessMoreDid) {
         this.addEmpDirLessMoreDid = addEmpDirLessMoreDid;
     }
 
-    public int getAddEmpDirLessMoreLin() {
+    public String getAddEmpDirLessMoreLin() {
         return addEmpDirLessMoreLin;
     }
 
-    public void setAddEmpDirLessMoreLin(int addEmpDirLessMoreLin) {
+    public void setAddEmpDirLessMoreLin(String addEmpDirLessMoreLin) {
         this.addEmpDirLessMoreLin = addEmpDirLessMoreLin;
     }
 
-    public int getAddEmpDirMoreLessDid() {
+    public String getAddEmpDirMoreLessDid() {
         return addEmpDirMoreLessDid;
     }
 
-    public void setAddEmpDirMoreLessDid(int addEmpDirMoreLessDid) {
+    public void setAddEmpDirMoreLessDid(String addEmpDirMoreLessDid) {
         this.addEmpDirMoreLessDid = addEmpDirMoreLessDid;
     }
 
-    public int getAddEmpDirMoreLessLin() {
+    public String getAddEmpDirMoreLessLin() {
         return addEmpDirMoreLessLin;
     }
 
-    public void setAddEmpDirMoreLessLin(int addEmpDirMoreLessLin) {
+    public void setAddEmpDirMoreLessLin(String addEmpDirMoreLessLin) {
         this.addEmpDirMoreLessLin = addEmpDirMoreLessLin;
     }
 
-    public int getAddEmpDirInBlackDid() {
+    public String getAddEmpDirInBlackDid() {
         return addEmpDirInBlackDid;
     }
 
-    public void setAddEmpDirInBlackDid(int addEmpDirInBlackDid) {
+    public void setAddEmpDirInBlackDid(String addEmpDirInBlackDid) {
         this.addEmpDirInBlackDid = addEmpDirInBlackDid;
     }
 
-    public int getAddEmpDirInBlackLin() {
+    public String getAddEmpDirInBlackLin() {
         return addEmpDirInBlackLin;
     }
 
-    public void setAddEmpDirInBlackLin(int addEmpDirInBlackLin) {
+    public void setAddEmpDirInBlackLin(String addEmpDirInBlackLin) {
         this.addEmpDirInBlackLin = addEmpDirInBlackLin;
     }
 
-    public int getAddEmpDirInWhiteDid() {
+    public String getAddEmpDirInWhiteDid() {
         return addEmpDirInWhiteDid;
     }
 
-    public void setAddEmpDirInWhiteDid(int addEmpDirInWhiteDid) {
+    public void setAddEmpDirInWhiteDid(String addEmpDirInWhiteDid) {
         this.addEmpDirInWhiteDid = addEmpDirInWhiteDid;
     }
 
-    public int getAddEmpDirInWhiteLin() {
+    public String getAddEmpDirInWhiteLin() {
         return addEmpDirInWhiteLin;
     }
 
-    public void setAddEmpDirInWhiteLin(int addEmpDirInWhiteLin) {
+    public void setAddEmpDirInWhiteLin(String addEmpDirInWhiteLin) {
         this.addEmpDirInWhiteLin = addEmpDirInWhiteLin;
     }
 
-    public int getAddEmpDirNewIncrementDid() {
+    public String getAddEmpDirNewIncrementDid() {
         return addEmpDirNewIncrementDid;
     }
 
-    public void setAddEmpDirNewIncrementDid(int addEmpDirNewIncrementDid) {
+    public void setAddEmpDirNewIncrementDid(String addEmpDirNewIncrementDid) {
         this.addEmpDirNewIncrementDid = addEmpDirNewIncrementDid;
     }
 
-    public int getAddEmpDirNewIncrementLin() {
+    public String getAddEmpDirNewIncrementLin() {
         return addEmpDirNewIncrementLin;
     }
 
-    public void setAddEmpDirNewIncrementLin(int addEmpDirNewIncrementLin) {
+    public void setAddEmpDirNewIncrementLin(String addEmpDirNewIncrementLin) {
         this.addEmpDirNewIncrementLin = addEmpDirNewIncrementLin;
     }
 
+    public String getTotalSuccessInLogExe() {
+        return totalSuccessInLogExe;
+    }
 
-    public int getTotalSuccessInLogLin() {
+    public void setTotalSuccessInLogExe(String totalSuccessInLogExe) {
+        this.totalSuccessInLogExe = totalSuccessInLogExe;
+    }
+
+    public String getTotalSuccessInLogIng() {
+        return totalSuccessInLogIng;
+    }
+
+    public void setTotalSuccessInLogIng(String totalSuccessInLogIng) {
+        this.totalSuccessInLogIng = totalSuccessInLogIng;
+    }
+
+    public String getTotalSuccessInLogLin() {
         return totalSuccessInLogLin;
     }
 
-    public void setTotalSuccessInLogLin(int totalSuccessInLogLin) {
+    public void setTotalSuccessInLogLin(String totalSuccessInLogLin) {
         this.totalSuccessInLogLin = totalSuccessInLogLin;
     }
 
+    public String getTotalSuccessInDataBaseExe() {
+        return totalSuccessInDataBaseExe;
+    }
 
-    public int getTotalSuccessInDataBaseLin() {
+    public void setTotalSuccessInDataBaseExe(String totalSuccessInDataBaseExe) {
+        this.totalSuccessInDataBaseExe = totalSuccessInDataBaseExe;
+    }
+
+    public String getTotalSuccessInDataBaseIng() {
+        return totalSuccessInDataBaseIng;
+    }
+
+    public void setTotalSuccessInDataBaseIng(String totalSuccessInDataBaseIng) {
+        this.totalSuccessInDataBaseIng = totalSuccessInDataBaseIng;
+    }
+
+    public String getTotalSuccessInDataBaseLin() {
         return totalSuccessInDataBaseLin;
     }
 
-    public void setTotalSuccessInDataBaseLin(int totalSuccessInDataBaseLin) {
+    public void setTotalSuccessInDataBaseLin(String totalSuccessInDataBaseLin) {
         this.totalSuccessInDataBaseLin = totalSuccessInDataBaseLin;
+    }
+
+    public String getOutAddMorMorDid() {
+        return outAddMorMorDid;
+    }
+
+    public void setOutAddMorMorDid(String outAddMorMorDid) {
+        this.outAddMorMorDid = outAddMorMorDid;
+    }
+
+    public String getOutAddMorMorLin() {
+        return outAddMorMorLin;
+    }
+
+    public void setOutAddMorMorLin(String outAddMorMorLin) {
+        this.outAddMorMorLin = outAddMorMorLin;
+    }
+
+    public String getOutAddLessDid() {
+        return outAddLessDid;
+    }
+
+    public void setOutAddLessDid(String outAddLessDid) {
+        this.outAddLessDid = outAddLessDid;
+    }
+
+    public String getOutAddLessLin() {
+        return outAddLessLin;
+    }
+
+    public void setOutAddLessLin(String outAddLessLin) {
+        this.outAddLessLin = outAddLessLin;
+    }
+
+    public String getOutAddMorLesZeroDid() {
+        return outAddMorLesZeroDid;
+    }
+
+    public void setOutAddMorLesZeroDid(String outAddMorLesZeroDid) {
+        this.outAddMorLesZeroDid = outAddMorLesZeroDid;
+    }
+
+    public String getOutAddMorLesZeroLin() {
+        return outAddMorLesZeroLin;
+    }
+
+    public void setOutAddMorLesZeroLin(String outAddMorLesZeroLin) {
+        this.outAddMorLesZeroLin = outAddMorLesZeroLin;
+    }
+
+    public String getOutAddMorLesHalfDid() {
+        return outAddMorLesHalfDid;
+    }
+
+    public void setOutAddMorLesHalfDid(String outAddMorLesHalfDid) {
+        this.outAddMorLesHalfDid = outAddMorLesHalfDid;
+    }
+
+    public String getOutAddMorLesHalfLin() {
+        return outAddMorLesHalfLin;
+    }
+
+    public void setOutAddMorLesHalfLin(String outAddMorLesHalfLin) {
+        this.outAddMorLesHalfLin = outAddMorLesHalfLin;
     }
 }
