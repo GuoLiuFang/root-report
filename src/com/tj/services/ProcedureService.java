@@ -36,10 +36,10 @@ public class ProcedureService {
                 Method setMethod = null;
                 //对于每一个key找到其对应的get和set方法。
                 for (Method method : methods) {
-                    if (method.getName().contains(key) && method.getName().startsWith("get")) {
+                    if (method.getName().contains(key) && method.getName().startsWith("get") && method.getName().endsWith("Lin")) {
                         getMethod = method;
                     }
-                    if (method.getName().contains(key) && method.getName().startsWith("set")) {
+                    if (method.getName().contains(key) && method.getName().startsWith("set") && method.getName().endsWith("Lin")) {
                         setMethod = method;
                     }
                 }
