@@ -10,9 +10,16 @@ import java.util.*;
 
 import com.tj.beans.Procedure;
 import com.tj.db.ProcedureDb;
+import com.tj.extra.ProcedureExtra;
 
 public class ProcedureService {
     private Properties properties;
+    private Map<String, ProcedureExtra> procedureExtraMap;
+
+
+    public Map<String, ProcedureExtra> getProcedureExtraMap() {
+        return procedureExtraMap;
+    }
 
     public List<Procedure> getResultList() {
 
@@ -20,7 +27,9 @@ public class ProcedureService {
         ProcedureDb procedureDb = new ProcedureDb();
         procedureList = procedureDb.ExtractDatabase();
         Set<String> mappingSet = getMappingInfo();
+        procedureExtraMap = new HashMap<>();
         for (Procedure procedure : procedureList) {
+            fillAditionalInfo(procedure);
             for (String key : mappingSet) {
                 Method[] methods = procedure.getClass().getDeclaredMethods();
                 Method getMethod = null;
@@ -52,6 +61,21 @@ public class ProcedureService {
 
     }
 
+    private void fillAditionalInfo(Procedure procedure) {
+        ProcedureExtra procedureExtra = new ProcedureExtra();
+        procedureExtra.setCurrentNewIncrementLin("" + (Integer.valueOf(procedure.getUniqueAddressNewIncrementLin()) + Integer.valueOf(procedure.getAddEmpDirNewIncrementLin()) + Integer.valueOf(procedure.getUniAddLesMorDirNewIncrementLin()) + Integer.valueOf(procedure.getUniAddMorLesDirNewIncrementLin())));
+        procedureExtra.setCurrentNewIncrementDid("" + (Integer.valueOf(procedure.getUniqueAddressNewIncrementDid()) + Integer.valueOf(procedure.getAddEmpDirNewIncrementDid()) + Integer.valueOf(procedure.getUniAddLesMorDirNewIncrementDid()) + Integer.valueOf(procedure.getUniAddMorLesDirNewIncrementDid())));
+        procedureExtra.setCurrentNewDeleteLin("" + (Integer.valueOf(procedure.getOutAddMorLesZeroLin()) + Integer.valueOf(procedure.getOutAddMorLesHalfLin())));
+        procedureExtra.setCurrentNewDeleteDid("" + (Integer.valueOf(procedure.getOutAddMorLesZeroDid()) + Integer.valueOf(procedure.getOutAddMorLesHalfDid())));
+        procedureExtra.setCurrentBlackSizeLin("" + (Integer.valueOf(procedure.getUniqueAddressInBlackLin())));
+        procedureExtra.setCurrentBlackSizeDid("" + (Integer.valueOf(procedure.getUniqueAddressInBlackDid())));
+        procedureExtra.setCurrentWhiteSizeLin("" + (Integer.valueOf(procedure.getUniqueAddressInWhiteLin()) + Integer.valueOf(procedure.getAddEmpDirInWhiteLin()) + Integer.valueOf(procedureExtra.getCurrentNewIncrementLin())));
+        procedureExtra.setCurrentWhiteSizeDid("" + (Integer.valueOf(procedure.getUniqueAddressInWhiteDid()) + Integer.valueOf(procedure.getAddEmpDirInWhiteDid()) + Integer.valueOf(procedureExtra.getCurrentNewIncrementDid())));
+
+        procedureExtraMap.put(procedure.getRecordTime(), procedureExtra);
+
+    }
+
     private Set getMappingInfo() {
         properties = new Properties();
         try {
@@ -66,6 +90,7 @@ public class ProcedureService {
         Set<String> keySet = properties.stringPropertyNames();
         return keySet;
     }
+
 
     public static void main(String[] args) {
         List<Procedure> procedureList = new ArrayList<>();
