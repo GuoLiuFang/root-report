@@ -7,35 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="542d017b-4982-4f14-bb67-ab9aadc68a3e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tj/beans/ErrorAddress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tj/db/ErrorAddressDb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tj/servlets/ErrorAddressHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tj/services/ErrorAddressService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tj/servlets/ShowErrorAddress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/shell.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/beans/Procedure.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/beans/Sophie.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/db/ProcedureDb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/db/SophieDb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/extra/ProcedureExtra.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/services/ProcedureService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/services/SophieService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/servlets/ShowProcedure.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/com/tj/servlets/ShowSophie.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/classes/mapping.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.25-bin.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/sophieJobDetail.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/out/artifacts/root_report_war_exploded/procedureJobDetail.jsp" afterPath="$PROJECT_DIR$/WebContent/errorAddressJobDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/tj/db/SophieDb.class" afterPath="$PROJECT_DIR$/build/classes/com/tj/db/SophieDb.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tj/db/ErrorAddressDb.java" afterPath="$PROJECT_DIR$/src/com/tj/db/ErrorAddressDb.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tj/db/ProcedureDb.java" afterPath="$PROJECT_DIR$/src/com/tj/db/ProcedureDb.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tj/db/SophieDb.java" afterPath="$PROJECT_DIR$/src/com/tj/db/SophieDb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/index.jsp" afterPath="$PROJECT_DIR$/WebContent/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="root-report.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +31,45 @@
     <favorites_list name="root-report" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ProcedureDb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tj/db/ProcedureDb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+              <folding>
+                <marker date="1444964997000" expanded="true" signature="697:747" placeholder="select * fro..root_report..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SophieDb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tj/db/SophieDb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+              <folding>
+                <marker date="1444964997000" expanded="true" signature="689:743" placeholder="select * fro..sophie_monitor..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorAddressDb.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tj/db/ErrorAddressDb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23809524">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1444964997000" expanded="true" signature="609:663" placeholder="select * fro..address_verify..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,17 +101,17 @@
         <option value="$PROJECT_DIR$/WebContent/procedureJobDetail.jsp" />
         <option value="$PROJECT_DIR$/src/com/tj/services/ProcedureService.java" />
         <option value="$PROJECT_DIR$/src/com/tj/beans/ErrorAddress.java" />
-        <option value="$PROJECT_DIR$/src/com/tj/db/ProcedureDb.java" />
-        <option value="$PROJECT_DIR$/src/com/tj/db/SophieDb.java" />
         <option value="$PROJECT_DIR$/WebContent/index.jsp" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/com/tj/db/ErrorAddressDb.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WebContent/errorAddressJobDetail.jsp" />
         <option value="$PROJECT_DIR$/src/com/tj/servlets/ShowErrorAddress.java" />
         <option value="$PROJECT_DIR$/src/com/tj/servlets/ErrorAddressHandler.java" />
         <option value="$PROJECT_DIR$/res/shell.properties" />
         <option value="$PROJECT_DIR$/src/com/tj/services/ErrorAddressService.java" />
+        <option value="$PROJECT_DIR$/src/com/tj/db/ErrorAddressDb.java" />
+        <option value="$PROJECT_DIR$/src/com/tj/db/ProcedureDb.java" />
+        <option value="$PROJECT_DIR$/src/com/tj/db/SophieDb.java" />
       </list>
     </option>
   </component>
@@ -160,15 +172,15 @@
               <option name="myItemId" value="root-report" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="root-report" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="root-report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -805,12 +817,12 @@
       <workItem from="1442547467538" duration="833000" />
       <workItem from="1442818945831" duration="25623000" />
       <workItem from="1442982172581" duration="1453000" />
-      <workItem from="1444897768607" duration="12248000" />
+      <workItem from="1444897768607" duration="12358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67270000" />
+    <option name="totallyTimeSpent" value="67380000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -823,7 +835,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2029" y="44" width="1834" height="977" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -886,7 +898,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1444901127000" expanded="true" signature="-1:-1" placeholder="select * fro..root_report..." />
+            <marker date="1444964997000" expanded="true" signature="697:747" placeholder="select * fro..root_report..." />
           </folding>
         </state>
       </provider>
@@ -914,7 +926,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1444901127000" expanded="true" signature="-1:-1" placeholder="select * fro..root_report..." />
+            <marker date="1444964997000" expanded="true" signature="697:747" placeholder="select * fro..root_report..." />
           </folding>
         </state>
       </provider>
@@ -1154,26 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tj/db/ProcedureDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <marker date="1444901127000" expanded="true" signature="-1:-1" placeholder="select * fro..root_report..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tj/db/SophieDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <marker date="1444901127000" expanded="true" signature="-1:-1" placeholder="select * fro..sophie_monitor..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/sophieJobDetail.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3741007">
@@ -1264,13 +1256,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tj/db/ProcedureDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <marker date="1444964997000" expanded="true" signature="697:747" placeholder="select * fro..root_report..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tj/db/SophieDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <marker date="1444964997000" expanded="true" signature="689:743" placeholder="select * fro..sophie_monitor..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tj/db/ErrorAddressDb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44217688">
-          <caret line="48" column="54" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.23809524">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1444902154000" expanded="true" signature="-1:-1" placeholder="select * fro..address_verify..." />
+            <marker date="1444964997000" expanded="true" signature="609:663" placeholder="select * fro..address_verify..." />
           </folding>
         </state>
       </provider>
