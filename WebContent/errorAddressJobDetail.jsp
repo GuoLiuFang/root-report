@@ -28,7 +28,7 @@
         </td>
         <td><%=record_time%>
         </td>
-        <td><a href="ErrorAddressHandler?did=<%=did%>&record_time=<%=record_time%>"><%=error_info%></a>
+        <td><a href="ErrorAddressHandler?did=<%=did%>&record_time=<%=record_time%>&error_info=<%=error_info%>"><%=error_info%></a>
         </td>
     </tr>
     <%
