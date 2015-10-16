@@ -67,8 +67,8 @@ public class ProcedureService {
         procedureExtra.setCurrentNewIncrementDid("" + (Integer.valueOf(procedure.getUniqueAddressNewIncrementDid()) + Integer.valueOf(procedure.getAddEmpDirNewIncrementDid()) + Integer.valueOf(procedure.getUniAddLesMorDirNewIncrementDid()) + Integer.valueOf(procedure.getUniAddMorLesDirNewIncrementDid())));
         procedureExtra.setCurrentNewDeleteLin("" + (Integer.valueOf(procedure.getOutAddMorLesZeroLin()) + Integer.valueOf(procedure.getOutAddMorLesHalfLin())));
         procedureExtra.setCurrentNewDeleteDid("" + (Integer.valueOf(procedure.getOutAddMorLesZeroDid()) + Integer.valueOf(procedure.getOutAddMorLesHalfDid())));
-        procedureExtra.setCurrentBlackSizeLin("" + (Integer.valueOf(procedure.getUniqueAddressInBlackLin())));
-        procedureExtra.setCurrentBlackSizeDid("" + (Integer.valueOf(procedure.getUniqueAddressInBlackDid())));
+        procedureExtra.setCurrentBlackSizeLin("" + (Integer.valueOf(procedure.getUniqueAddressInBlackLin()) + Integer.valueOf(procedure.getAddEmpDirInBlackLin())));
+        procedureExtra.setCurrentBlackSizeDid("" + (Integer.valueOf(procedure.getUniqueAddressInBlackDid()) + Integer.valueOf(procedure.getAddEmpDirInBlackDid())));
         procedureExtra.setCurrentWhiteSizeLin("" + (Integer.valueOf(procedure.getUniqueAddressInWhiteLin()) + Integer.valueOf(procedure.getAddEmpDirInWhiteLin()) + Integer.valueOf(procedureExtra.getCurrentNewIncrementLin())));
         procedureExtra.setCurrentWhiteSizeDid("" + (Integer.valueOf(procedure.getUniqueAddressInWhiteDid()) + Integer.valueOf(procedure.getAddEmpDirInWhiteDid()) + Integer.valueOf(procedureExtra.getCurrentNewIncrementDid())));
 
