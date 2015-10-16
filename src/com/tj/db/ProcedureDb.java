@@ -16,8 +16,8 @@ public class ProcedureDb {
 	// private String infinidbUrl = "jdbc:infinidb:";
 
 	private String protocal = "jdbc:mysql://";
-	private String hostNamePort = "192.168.12.15:5209/";//production
-//	private String hostNamePort = "localhost:5219/";//local test
+//	private String hostNamePort = "192.168.12.15:5209/";//production
+	private String hostNamePort = "localhost:5219/";//local test
 	private String scheme = "sword_production?";
 	private String user = "user=guoliufang&";
 	private String passwd = "password=tiger2108";

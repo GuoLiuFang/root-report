@@ -1,32 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>root-report</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>ShowSophie</display-name>
-    <servlet-name>ShowSophie</servlet-name>
-    <servlet-class>com.tj.servlets.ShowSophie</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ShowSophie</servlet-name>
-    <url-pattern>/ShowSophie</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ShowProcedure</display-name>
-    <servlet-name>ShowProcedure</servlet-name>
-    <servlet-class>com.tj.servlets.ShowProcedure</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ShowProcedure</servlet-name>
-    <url-pattern>/ShowProcedure</url-pattern>
-  </servlet-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+    <display-name>root-report</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description></description>
+        <display-name>ShowSophie</display-name>
+        <servlet-name>ShowSophie</servlet-name>
+        <servlet-class>com.tj.servlets.ShowSophie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowSophie</servlet-name>
+        <url-pattern>/ShowSophie</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ShowProcedure</display-name>
+        <servlet-name>ShowProcedure</servlet-name>
+        <servlet-class>com.tj.servlets.ShowProcedure</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowProcedure</servlet-name>
+        <url-pattern>/ShowProcedure</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ShowErrorAddress</display-name>
+        <servlet-name>ShowErrorAddress</servlet-name>
+        <servlet-class>com.tj.servlets.ShowErrorAddress</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowErrorAddress</servlet-name>
+        <url-pattern>/ShowErrorAddress</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ErrorAddressHandler</servlet-name>
+        <servlet-class>com.tj.servlets.ErrorAddressHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorAddressHandler</servlet-name>
+        <url-pattern>/ErrorAddressHandler</url-pattern>
+    </servlet-mapping>
+
 </web-app>

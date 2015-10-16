@@ -13,5 +13,8 @@
 <form action="ShowProcedure" method="post">
 	<input type="submit" value="查看root_address入库过程" />
 </form>
+<form action="ShowErrorAddress" method="post">
+	<input type="submit" value="地址清洗正确性的校验" />
+</form>
 </body>
 </html>
