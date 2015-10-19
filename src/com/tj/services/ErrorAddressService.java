@@ -46,18 +46,22 @@ public class ErrorAddressService {
     public String getDetails(String... args) {
         StringBuffer result = new StringBuffer();
         try {
-//            String exeStr = this.properties.getProperty("exeWay") + " " + this.properties.getProperty("shellPath") + " " + this.properties.getProperty("contentPath") + " " + args[0] + " " + args[1];
-//            System.out.println("---要执行的语句是－－－－－" + exeStr);
-            Process process = Runtime.getRuntime().exec(getExeContent(args));
+//            String exeStr = "ssh ny3 \"" + getExeContent(args) + "\"";
+            String exeStr = getExeContent(args);
+            System.out.println("---要执行的语句是－－－－－" + exeStr);
+            Process process = Runtime.getRuntime().exec(exeStr);
+            BufferedReader err = new BufferedReader(new InputStreamReader(process.getErrorStream()));
             BufferedReader read = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            process.waitFor();
-            while (read.ready()) {
-                result.append(read.readLine());
-//                System.out.println(read.readLine());
+            String line;
+            while ((line = read.readLine()) != null) {
+                result.append(line);
             }
+            System.out.println("<ERROR>");
+            while ((line = err.readLine()) != null) {
+                result.append(line);
+            }
+            System.out.println("</ERROR>");
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
             e.printStackTrace();
         }
         return result.toString();
@@ -69,7 +73,7 @@ public class ErrorAddressService {
         String contentFileName = "bingo." + dateAndTime[0] + ".log";
         date_time = "'" + date_time + "'";
         String exeContent = this.properties.getProperty("exeWay") + " " + this.properties.getProperty("shellPath") + " " + this.properties.getProperty("contentPath") + contentFileName + " " + args[0] + " " + date_time;
-        System.out.println(exeContent);
+//        System.out.println(exeContent);
         return exeContent;
     }
 
@@ -82,8 +86,8 @@ public class ErrorAddressService {
 //            System.out.println("日期是：" + errorAddress.getDid());
 //        }
         ErrorAddressService errorAddressService = ErrorAddressService.getErrorAddressService();
-//        String result = errorAddressService.getDetails("4beaec8b-ec1b-4ff8-844d-5e5ddd579020", "2015-09-29 08:49:55");
-        String result = errorAddressService.getExeContent("76339d39-3c02-40d3-b617-68afaaeb2eb0", "2015-10-07 14:04:29");
+        String result = errorAddressService.getDetails("4502fc26-6771-4bdf-9b89-7c513963f0dc", "2015-10-18 23:59:58");
+//        String result = errorAddressService.getExeContent("4502fc26-6771-4bdf-9b89-7c513963f0dc", "2015-10-18 23:59:58");
         System.out.println("-------执行结果是-------" + result);
     }
 
