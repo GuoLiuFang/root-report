@@ -17,7 +17,7 @@ public class ErrorAddressDb {
     private String scheme = "sword_production?";
     private String user = "user=guoliufang&";
     private String passwd = "password=tiger2108";
-    private String sql = "select * from address_verify order by record_time desc;";
+    private String sql = "select * from address_verify order by record_time desc limit 100;";
 
     public List<ErrorAddress> ExtractDatabase() {
         List<ErrorAddress> dataList = new ArrayList<>();
