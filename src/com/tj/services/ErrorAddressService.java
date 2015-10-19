@@ -70,7 +70,13 @@ public class ErrorAddressService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return result.toString();
+        String formateDetails = formatDetails(result.toString());
+        return formateDetails;
+    }
+
+    private String formatDetails(String s) {
+        String result = s.replaceAll("\\\\n","<br>");
+        return result;
     }
 
     private String getExeContent(String... args) {

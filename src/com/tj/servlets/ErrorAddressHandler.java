@@ -26,10 +26,10 @@ public class ErrorAddressHandler extends HttpServlet {
         String record_time = request.getParameter("record_time");
         String error_info = request.getParameter("error_info");
         PrintWriter printWriter = response.getWriter();
-        printWriter.println("did-----回传的数据是" + did);
-        printWriter.println("record_time-----回传的数据是" + record_time);
-        printWriter.println("error_info-----回传的数据是" + error_info);
-        printWriter.println("-------------日志详情--------------------------");
+        printWriter.println("did-----回传的数据是" + did + "<br>");
+        printWriter.println("record_time-----回传的数据是" + record_time + "<br>");
+        printWriter.println("error_info-----回传的数据是" + error_info+ "<br>");
+        printWriter.println("<br>-------------日志详情--------------------------<br>");
 
         String details = errorAddressService.getDetails(did, record_time);
 
