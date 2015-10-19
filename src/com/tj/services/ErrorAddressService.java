@@ -48,19 +48,25 @@ public class ErrorAddressService {
         try {
 //            String exeStr = "ssh ny3 \"" + getExeContent(args) + "\"";
             String exeStr = getExeContent(args);
+//            exeStr ="sh /tmp/grepDetails.sh /tmp/bingo.2015-10-18.log 4502fc26-6771-4bdf-9b89-7c513963f0dc 23:59:58";
+//            String exeStr = "grep '2015-10-18 23:59:58' /tmp/bingo.2015-10-18.log | grep 4502fc26-6771-4bdf-9b89-7c513963f0dc";
             System.out.println("---要执行的语句是－－－－－" + exeStr);
             Process process = Runtime.getRuntime().exec(exeStr);
             BufferedReader err = new BufferedReader(new InputStreamReader(process.getErrorStream()));
             BufferedReader read = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
+//            System.out.println("<INFO>");
             while ((line = read.readLine()) != null) {
                 result.append(line);
+//                System.out.println(line);
             }
-            System.out.println("<ERROR>");
+//            System.out.println("</INFO>");
+//            System.out.println("<ERROR>");
             while ((line = err.readLine()) != null) {
                 result.append(line);
+//                System.out.println(line);
             }
-            System.out.println("</ERROR>");
+//            System.out.println("</ERROR>");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -71,9 +77,8 @@ public class ErrorAddressService {
         String date_time = args[1];
         String[] dateAndTime = date_time.split("[ ]");
         String contentFileName = "bingo." + dateAndTime[0] + ".log";
-        date_time = "'" + date_time + "'";
-        String exeContent = this.properties.getProperty("exeWay") + " " + this.properties.getProperty("shellPath") + " " + this.properties.getProperty("contentPath") + contentFileName + " " + args[0] + " " + date_time;
-//        System.out.println(exeContent);
+        String exeContent = this.properties.getProperty("exeWay") + " " + this.properties.getProperty("shellPath") + " " + this.properties.getProperty("contentPath") + contentFileName + " " + args[0] + " " + dateAndTime[1];
+        System.out.println(exeContent);
         return exeContent;
     }
 
