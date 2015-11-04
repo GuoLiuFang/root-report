@@ -92,6 +92,11 @@ public class Procedure {
     private String outAddMorLesHalfDid;
     private String outAddMorLesHalfLin;
 
+    private String uniAddrExceptionDid;
+    private String uniAddrExceptionLin;
+    private String empAddrExceptionDid;
+    private String empAddrExceptionLin;
+
     public String getRecordTime() {
         return recordTime;
     }
@@ -786,5 +791,37 @@ public class Procedure {
 
     public void setOutAddMorLesHalfLin(String outAddMorLesHalfLin) {
         this.outAddMorLesHalfLin = outAddMorLesHalfLin;
+    }
+
+    public String getUniAddrExceptionDid() {
+        return uniAddrExceptionDid;
+    }
+
+    public void setUniAddrExceptionDid(String uniAddrExceptionDid) {
+        this.uniAddrExceptionDid = uniAddrExceptionDid;
+    }
+
+    public String getUniAddrExceptionLin() {
+        return uniAddrExceptionLin;
+    }
+
+    public void setUniAddrExceptionLin(String uniAddrExceptionLin) {
+        this.uniAddrExceptionLin = uniAddrExceptionLin;
+    }
+
+    public String getEmpAddrExceptionDid() {
+        return empAddrExceptionDid;
+    }
+
+    public void setEmpAddrExceptionDid(String empAddrExceptionDid) {
+        this.empAddrExceptionDid = empAddrExceptionDid;
+    }
+
+    public String getEmpAddrExceptionLin() {
+        return empAddrExceptionLin;
+    }
+
+    public void setEmpAddrExceptionLin(String empAddrExceptionLin) {
+        this.empAddrExceptionLin = empAddrExceptionLin;
     }
 }

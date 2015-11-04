@@ -14,7 +14,7 @@
 
 <%
     List<Procedure> ProcedureList = (List) session.getAttribute("procedureDetails");
-    Map<String,ProcedureExtra> procedureExtraMap = (Map) session.getAttribute("procedureExtraMap");
+    Map<String, ProcedureExtra> procedureExtraMap = (Map) session.getAttribute("procedureExtraMap");
     NumberFormat numberFormat = NumberFormat.getInstance();
     numberFormat.setMaximumFractionDigits(3);
     for (Procedure procedure : ProcedureList) {
@@ -54,34 +54,44 @@
         <th bgcolor="#ff7f50">白名单详情</th>
         <td>当日新增的LinuxVersion：<span style="color: chartreuse"><%=procedureExtra.getCurrentNewIncrementLin()%></span>
         </td>
-        <td>当日新增的LinuxVersion对应的did：<span style="color: chartreuse"><%=procedureExtra.getCurrentNewIncrementDid()%></span>
+        <td>当日新增的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedureExtra.getCurrentNewIncrementDid()%></span>
         </td>
         <td>当日删除的LinuxVersion：<span style="color: chartreuse"><%=procedureExtra.getCurrentNewDeleteLin()%></span>
         </td>
         <td>当日删除的LinuxVersion对应的did：<span style="color: chartreuse"><%=procedureExtra.getCurrentNewDeleteDid()%></span>
         </td>
-        <td>当日完成删除和插入后白名单的LinuxVersion：<span style="color: chartreuse"><%=procedureExtra.getCurrentWhiteSizeLin()%></span>
+        <td>当日完成删除和插入后白名单的LinuxVersion：<span
+                style="color: chartreuse"><%=procedureExtra.getCurrentWhiteSizeLin()%></span>
         </td>
-        <td>当日完成删除和插入后白名单的的LinuxVersion对应的did：<span style="color: chartreuse"><%=procedureExtra.getCurrentWhiteSizeDid()%></span>
+        <td>当日完成删除和插入后白名单的的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedureExtra.getCurrentWhiteSizeDid()%></span>
         </td>
-        <td>当日完成删除和插入后黑名单的LinuxVersion：<span style="color: chartreuse"><%=procedureExtra.getCurrentBlackSizeLin()%></span>
+        <td>当日完成删除和插入后黑名单的LinuxVersion：<span
+                style="color: chartreuse"><%=procedureExtra.getCurrentBlackSizeLin()%></span>
         </td>
-        <td>当日完成删除和插入后黑名单的的LinuxVersion对应的did：<span style="color: chartreuse"><%=procedureExtra.getCurrentBlackSizeDid()%></span>
+        <td>当日完成删除和插入后黑名单的的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedureExtra.getCurrentBlackSizeDid()%></span>
         </td>
     </tr>
     <tr>
         <th>当日出库的情况</th>
-        <td>定向非定向开始执行数均大于22，定减非的日率差大于0或定减非日率差小于0但差值在10%以内，定向日率大于50%的LinuxVersion：<span style="color: chartreuse"><%=procedure.getOutAddMorMorLin()%></span>
+        <td>定向非定向开始执行数均大于22，定减非的日率差大于0或定减非日率差小于0但差值在10%以内，定向日率大于50%的LinuxVersion：<span
+                style="color: chartreuse"><%=procedure.getOutAddMorMorLin()%></span>
         </td>
-        <td>定向非定向开始执行数均大于22，定减非的日率差大于0或定减非日率差小于0但差值在10%以内，定向日率大于50%的LinuxVersion对应的did：<span style="color: chartreuse"><%=procedure.getOutAddMorMorDid()%></span>
+        <td>定向非定向开始执行数均大于22，定减非的日率差大于0或定减非日率差小于0但差值在10%以内，定向日率大于50%的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedure.getOutAddMorMorDid()%></span>
         </td>
         <td>所有的定向开始执行数小于22，处于培育期的LinuxVersion：<span style="color: chartreuse"><%=procedure.getOutAddLessLin()%></span>
         </td>
-        <td>所有的定向开始执行数小于22，处于培育期的LinuxVersion对应的did：<span style="color: chartreuse"><%=procedure.getOutAddLessDid()%></span>
+        <td>所有的定向开始执行数小于22，处于培育期的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedure.getOutAddLessDid()%></span>
         </td>
-        <td>定减非的日率差小于0并且差值在10%以上的LinuxVersion：<span style="color: chartreuse"><%=procedure.getOutAddMorLesZeroLin()%></span>
+        <td>定减非的日率差小于0并且差值在10%以上的LinuxVersion：<span
+                style="color: chartreuse"><%=procedure.getOutAddMorLesZeroLin()%></span>
         </td>
-        <td>定减非的日率差小于0并且差值在10%以上的LinuxVersion对应的did：<span style="color: chartreuse"><%=procedure.getOutAddMorLesZeroDid()%></span>
+        <td>定减非的日率差小于0并且差值在10%以上的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedure.getOutAddMorLesZeroDid()%></span>
         </td>
         <td>定向的日率小于50%的LinuxVersion：<span style="color: chartreuse"><%=procedure.getOutAddMorLesHalfLin()%></span>
         </td>
@@ -136,10 +146,18 @@
         </td>
         <td>地址唯一的LinuxVersion对应的did：<span
                 style="color: chartreuse"><%=procedure.getShellCodeZeroUniqueAddressDid()%></span></td>
+        <td>地址唯一数据异常的LinuxVersion：<span style="color: chartreuse"><%=procedure.getUniAddrExceptionLin()%></span>
+        </td>
+        <td>地址唯一数据异常的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedure.getUniAddrExceptionDid()%></span></td>
         <td>地址为空的LinuxVersion：<span style="color: chartreuse"><%=procedure.getShellCodeZeroAddressEmptyLin()%></span>
         </td>
         <td>地址为空的LinuxVersion对应的did：<span
                 style="color: chartreuse"><%=procedure.getShellCodeZeroAddressEmptyDid()%></span></td>
+        <td>地址为空数据异常的LinuxVersion：<span style="color: chartreuse"><%=procedure.getEmpAddrExceptionLin()%></span>
+        </td>
+        <td>地址为空数据异常的LinuxVersion对应的did：<span
+                style="color: chartreuse"><%=procedure.getEmpAddrExceptionDid()%></span></td>
     </tr>
     <tr>
         <th>地址唯一的详情</th>

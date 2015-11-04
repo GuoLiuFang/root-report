@@ -123,6 +123,11 @@ public class ProcedureDb {
                 procedure.setOutAddMorLesHalfDid("" + resultSet.getInt("outAddMorLesHalfDid"));
                 procedure.setOutAddMorLesHalfLin("" + resultSet.getInt("outAddMorLesHalfLin"));
 
+                procedure.setUniAddrExceptionDid("" + resultSet.getInt("uniAddrExceptionDid"));
+                procedure.setUniAddrExceptionLin("" + resultSet.getInt("uniAddrExceptionLin"));
+                procedure.setEmpAddrExceptionDid("" + resultSet.getInt("empAddrExceptionDid"));
+                procedure.setEmpAddrExceptionLin("" + resultSet.getInt("empAddrExceptionLin"));
+
 				dataList.add(procedure);
 			}
 
