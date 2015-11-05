@@ -53,5 +53,37 @@
         <servlet-name>ErrorAddressHandler</servlet-name>
         <url-pattern>/ErrorAddressHandler</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>DingBi</servlet-name>
+        <servlet-class>com.tj.servlets.DingBi</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DateChange</servlet-name>
+        <servlet-class>com.tj.servlets.DateChange</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DateChangeBrowser</servlet-name>
+        <servlet-class>com.tj.servlets.DateChangeBrowser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AnalysizeDetails</servlet-name>
+        <servlet-class>com.tj.servlets.AnalysizeDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AnalysizeDetails</servlet-name>
+        <url-pattern>/AnalysizeDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DateChangeBrowser</servlet-name>
+        <url-pattern>/DateChangeBrowser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DateChange</servlet-name>
+        <url-pattern>/DateChange</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DingBi</servlet-name>
+        <url-pattern>/DingBi</url-pattern>
+    </servlet-mapping>
 
 </web-app>
