@@ -18,11 +18,11 @@
 <body>
 <table border="1" align="center">
     <tr>
-        <th colspan="63" align="center">定向执行计划日分析详情</th>
+        <th colspan="65" align="center">定向执行计划日分析详情</th>
     </tr>
     <tr>
         <th colspan="3"></th>
-        <th colspan="8">待分析计划</th>
+        <th colspan="10">待分析计划</th>
         <th colspan="12">待分析计划中唯一地址</th>
         <th colspan="12">唯一地址中小于阈值大于日率</th>
         <th colspan="12">唯一地址中大于阈值小于日率</th>
@@ -58,6 +58,7 @@
         <th colspan="2">小于阈值大于日率</th>
         <th colspan="2">大于阈值小于日率</th>
         <th colspan="2">新增计划</th>
+
         <th colspan="2">白名单已存在</th>
         <th colspan="2">黑名单已存在</th>
         <th colspan="2">定向计划</th>
